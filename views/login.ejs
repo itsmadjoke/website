@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="https://andrewlock.net/content/images/2016/10/icon.png" />
+    <link rel="stylesheet" href="index.css">
+<style>
+  body {
+    background-image: linear-gradient(to right, rgb(55, 55, 206), rgb(114, 13, 197));
+  }
+a.go-back {
+  color:black;
+  text-decoration: none;
+  }
+  
+  .page-content {
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      outline: 1px solid white;
+      border-radius: 15px;
+      padding: 5%;
+      background-color: #f8f9fa;
+  
+      
+  }
+  
+   input:not([type=checkbox]) {
+      margin: 8px auto;
+      padding: 5px 5px;
+      box-sizing: border-box;
+      background: #FAFAFA;
+      border-radius: 2px;
+      font-size: 18px;
+      outline: none;
+  }
+  .form-control {
+      background: transparent;
+      border-width: 1px 0;
+      transition:  .15s ease-in-out,box-shadow .15s ease-in-out;
+      box-sizing: border-box;
+      background-clip: border-box;
+      border-width: 1px 0;
+      border-top-color: transparent!important;
+      margin-bottom: 1.25rem;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  
+  }
+  .text-center {
+      font-size: 21px;    
+      text-align: center;
+  }
+  .row {
+      display: flex;
+      padding-top:25px;
+      padding-bottom:25px;
+  }
+  .row1 {
+      display: flex;
+      padding-bottom:25px;
+      padding-left:10px;
+  }
+  .col-md-6 {
+      
+      padding-left:15px;
+      padding-bottom:25px;
+  }
+  .col-md-12    {
+      
+      padding-left:15px;
+  }
+  
+  .btn {
+      background-color: #28a745;
+      border:none;
+      cursor: pointer;
+      padding:10px;
+      border-radius: 5px;
+      color: white;
+      margin-top:50px;
+      position: flex; 
+      font-size: 18px;
+  }
+  .btn:hover{
+      background-color: #33d659;
+      
+  }
+  #a1 {
+      padding-left:100px;
+  }
+  #text {
+    font-size: 18px;
+  }
+  #mb-1 {
+    font-size: 24px;
+  }
+  .button {
+    position:block;
+  }
+  .error {
+      color: red;
+  }
+  </style>
+
+</head>
+<body>
+    
+
+    <div class="page-content">
+    
+            <!-- Main content -->
+            <div class="content-wrapper">
+                <!-- Content area -->
+                <div class="login-container">                  <!-- Login form -->
+      
+    <form action="/login" method="POST">
+    
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card mb-0">
+                <div class="card-body">
+                  
+                    <div class="text-center">
+                        
+                        <p id="mb-1">Login</h5>
+                    
+                    </div>
+                            <div class="error"><% if (messages.error) { %>
+                                <%= messages.error %>
+                              <% } %></div>
+                    <div class="row">
+                      <div class="col-md-12">
+                          <div class="form-group">
+                            <p id="text">Email</p>
+                              <input type="email" class="form-control" name="email" value="" placeholder="Your email" required>
+                              <div class="form-control-feedback">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+              <p id="text">Password</p>
+                    <input type="password" class="form-control" placeholder="Create password" value="" name="password">
+            </div>
+        </div>
+    
+    
+    
+
+    </div>
+     <div class="button">
+    <button type="submit" class="btn">Login</button>
+    <span id="a1">Don't have an account? <a href="/register">Register!</a></span>
+</div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+    </form>
+    
+    </div>
+                <!-- /content area -->
+    
+    
+                <!-- Footer -->
+                <!-- /footer -->
+    
+            </div>
+            <!-- /main content -->
+    
+        </div>
+        
+        <!-- /page content -->
+    
+    
+    
+    </body>
+</html>

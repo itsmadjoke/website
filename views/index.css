@@ -1,0 +1,113 @@
+root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+a.go-back {
+color:black;
+text-decoration: none;
+}
+
+.page-content {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    outline: 1px solid white;
+    border-radius: 15px;
+    padding: 1.25rem;
+    background-color: #f8f9fa;
+
+    
+}
+
+ input:not([type=checkbox]) {
+    margin: 8px auto;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    background: #FAFAFA;
+    border-radius: 2px;
+    font-size: 18px;
+    outline: none;
+}
+.form-control {
+    background: transparent;
+    border-width: 1px 0;
+    transition:  .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-sizing: border-box;
+    background-clip: border-box;
+    border-width: 1px 0;
+    border-top-color: transparent!important;
+    margin-bottom: 1.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+.text-center {
+    font-size: 21px;    
+    text-align: center;
+}
+.row {
+    display: flex;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+.row1 {
+    display: flex;
+    padding-bottom:25px;
+    padding-left:10px;
+}
+.col-md-6 {
+    
+    padding-left:15px;
+    padding-bottom:25px;
+}
+.col-md-12    {
+    
+    padding-left:15px;
+}
+
+.btn {
+    background-color: #28a745;
+    border:none;
+    cursor: pointer;
+    padding:10px;
+    border-radius: 5px;
+    color: white;
+    margin-top:50px;
+    position: flex; 
+    font-size: 18px;
+}
+.btn:hover{
+    background-color: #33d659;
+    
+}
+
+
+#a1 {
+    padding-left:100px;
+}
